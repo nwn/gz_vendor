@@ -102,6 +102,7 @@ endif()
 {% if vendor_has_python %}
 # environment hook for setting PYTHONPATH
 ament_environment_hooks("${CMAKE_CURRENT_SOURCE_DIR}/${PROJECT_NAME}_pythonpath.dsv.in")
+ament_environment_hooks("${CMAKE_CURRENT_SOURCE_DIR}/${PROJECT_NAME}_pythonpath.sh.in")
 {% endif %}
 {% endif %}
 
